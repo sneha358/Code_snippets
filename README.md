@@ -9,3 +9,8 @@ def number_of_digits(x):
     count+=1
   return count
 ```
+## mai pagal horahi hu
+```python
+def hayram():
+  print("yoyo")
+```
