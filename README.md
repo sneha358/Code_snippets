@@ -27,3 +27,16 @@ def findMaxConsecutiveOnes(self, nums: List[int]) -> int:
                 pass
         return gcount
 ```
+## 561. Array Partition
+
+make n pairs (a1, b1), (a2, b2), ..., (an, bn) such that the sum of min(ai, bi) for all i is maximized. Return the maximized sum.
+```cpp
+int sum=0;
+        sort(nums.begin(),nums.end());
+
+        for(int i=0; i<nums.size; i++){
+            if(i//2=0){
+                sum=sum+nums[i];
+            }
+        }
+        return sum;
