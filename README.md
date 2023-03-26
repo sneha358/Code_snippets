@@ -39,6 +39,7 @@ int sum=0;
             }
         }
         return sum;
+        ```
 
 ##2553. Separate the Digits in an Array.eg 12,33==1,2,3,3
 
@@ -60,4 +61,4 @@ int sum=0;
         }
         
         return answer;
-    }
+    }```
