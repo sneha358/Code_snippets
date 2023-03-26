@@ -34,8 +34,8 @@ make n pairs (a1, b1), (a2, b2), ..., (an, bn) such that the sum of min(ai, bi) 
 int sum=0;
         sort(nums.begin(),nums.end());
 
-        for(int i=0; i<nums.size; i++){
-            if(i//2=0){
+        for(int i=0; i<nums.size(); i++){
+            if(i%2=0){
                 sum=sum+nums[i];
             }
         }
