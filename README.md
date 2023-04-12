@@ -63,3 +63,12 @@ int sum=0;
         return answer;
     }
 ```
+
+## linklist traverse
+```cpp
+  ListNode* temp = head;
+        while(temp!= NULL){
+            cout<<temp->val<<" ";
+            temp= temp->next;
+        }
+ ```
