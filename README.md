@@ -72,3 +72,47 @@ int sum=0;
             temp= temp->next;
         }
  ```
+## array to integer number basic
+```cpp
+int array_to_int(vector<int> v, int rflag) {
+    int val = 0;
+    
+    if (rflag) {
+        /* generating number in reverse*/
+        for (int i = v.size() - 1; i >= 0; i--) {
+            val = val *10 + v[i];
+        }
+        
+    }else {
+        /* generating number */
+        for (int i = 0; i < v.size(); i++) {
+            val = val *10 + v[i];
+        }
+    }
+    return val;
+}
+
+int main() {
+    std::cout << "Hello World!\n";
+    int key = 1234;
+    int tmp = key;
+    int d = 0;
+    int rkey = 0;
+    
+    while(tmp) {
+        /*number to digits*/
+        d =  tmp %10;
+        tmp /= 10;
+        
+        /*digits to number*/
+        rkey = rkey* 10 + d;
+    }
+    
+    std::cout<< key <<" " << rkey<<std::endl;
+    
+    std::vector<int> v = {1, 2, 3, 4};
+    
+    std::cout<<"normal int : "<< array_to_int(v, 0) <<std::endl;
+    std::cout<<"reverse int : "<< array_to_int(v, 1) <<std::endl;
+    
+}
