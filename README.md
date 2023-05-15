@@ -134,3 +134,14 @@ string data = "hello world how are you";
        cout << letter_count[i] <<endl;
     }    
 ```
+## character count using hash_table
+```cpp
+unordered_map<char, int> hash_map;
+    for(int i = 0; i < data.size(); i++) {
+        if(data[i] == ' ') continue;
+        hash_map[data[i]]  = hash_map[data[i]] + 1; 
+    }
+    
+    for (auto i: hash_map)
+        cout << i.first << ":" << i.second <<endl;
+```
