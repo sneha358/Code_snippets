@@ -116,7 +116,7 @@ int main() {
     std::cout<<"reverse int : "<< array_to_int(v, 1) <<std::endl;
     
 }
-
+```
 
 ## character count using array
 ```cpp
@@ -133,4 +133,4 @@ string data = "hello world how are you";
     for(int i = 0; i < data.size(); i++) {
        cout << letter_count[i] <<endl;
     }    
-``
+```
