@@ -116,3 +116,21 @@ int main() {
     std::cout<<"reverse int : "<< array_to_int(v, 1) <<std::endl;
     
 }
+
+
+## character count using array
+```cpp
+string data = "hello world how are you";
+    vector<int> letter_count(26, 0);
+    
+    for(int i = 0; i < data.size(); i++) {
+        if(data[i] == ' ') continue;
+        int index = data[i] - 97;
+    
+        letter_count[index] = letter_count[index] + 1;   
+    }
+    
+    for(int i = 0; i < data.size(); i++) {
+       cout << letter_count[i] <<endl;
+    }    
+``
