@@ -145,3 +145,12 @@ unordered_map<char, int> hash_map;
     for (auto i: hash_map)
         cout << i.first << ":" << i.second <<endl;
 ```
+## create a compartor without function
+```cpp
+struct
+{
+  bool operator()(int a, int b) const { return a < b; }
+}customless;
+
+sort(a.begin(), a.end(), customless);
+```
