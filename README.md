@@ -233,3 +233,22 @@ int largestcolsum(int arr[][3]){
     return max;
 }
 ```
+## STL usage
+1. Priority Queue
+```cpp
+
+priority_queue<T, Conatiner, Comparator> pq;
+
+Params:
+T	-	The type of the stored elements.  
+Container	-	The type of the underlying container to use to store the elements.
+Compare	-	A Compare type providing a strict weak ordering.
+eg 
+priority_queue<int, vector<int>, greater<int>> pq;
+
+APIS:
+front()
+push_back()
+pop_back()
+
+```
