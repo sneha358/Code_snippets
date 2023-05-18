@@ -154,3 +154,82 @@ struct
 
 sort(a.begin(), a.end(), customless);
 ```
+## search element in 2d array function
+```cpp
+bool search(int arr[][3], int target){
+      for(int i=0; i<3; i++){
+        for(int j=0; j<3; j++){
+            if(arr[i][j] == target)
+            return 1;
+        }
+    }  
+    return 0;
+}
+```
+## find sum of row in 2d array function
+```cpp
+void sumrowwise(int arr[][3]){
+      
+      for(int i=0; i<3; i++){
+        int sum=0;
+        for(int j=0; j<3; j++){
+            sum += arr[i][j];
+        }
+        cout<<sum<<" ";
+    }
+    cout<<endl;
+}
+
+```
+## find sum of col in 2d array function
+```cpp
+void sumcolwise(int arr[][3]){
+      
+      for(int i=0; i<3; i++){
+        int sum=0;
+        for(int j=0; j<3; j++){
+            sum += arr[j][i];
+        }
+        cout<<sum<<" ";
+    }
+    cout<<endl;
+}
+```
+## find max row sum and index of row in 2d array function
+```cpp
+int largestrowsum(int arr[][3]){
+     int max = INT_MIN;
+     int rowindex=-1;
+     for(int i=0; i<3; i++){
+        int sum=0;
+        for(int j=0; j<3; j++){
+            sum += arr[i][j];
+        }
+        if(sum > max){
+            max = sum;
+            rowindex = i;
+        }
+    }
+    cout<< "rowindex of row having maximum sum is" << rowindex<<endl;;
+    return max;
+}
+```
+## find max col sum and index of col in 2d array function
+```cpp
+int largestcolsum(int arr[][3]){
+     int max = INT_MIN;
+     int colindex=-1;
+     for(int i=0; i<3; i++){
+        int sum=0;
+        for(int j=0; j<3; j++){
+            sum += arr[j][i];
+        }
+        if(sum > max){
+            max = sum;
+            colindex = i;
+        }
+    }
+    cout<< "rowindex of col having maximum sum is" << colindex<<endl;;
+    return max;
+}
+```
