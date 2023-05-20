@@ -277,6 +277,8 @@ pop_back()
   Initializing 2d vectors
   ```cpp
   vector<vector<int>> table<ROWS_COUNT, vector<int>(COLS_COUNT)>;
+  
+  vector<vector<int>> table<ROWS_COUNT, vector<int>(COLS_COUNT, val)>;
   ```
 
 
