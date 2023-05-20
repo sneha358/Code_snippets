@@ -252,3 +252,22 @@ push_back()
 pop_back()
 
 ```
+2. Vectors  
+  * Initializations:
+  ```cpp
+  vector<T> v1; => default initialization, v1 is empty;
+  
+  vector<T> v2(v1); => v2 has copy of each element of v1;
+  
+  vector<T> v2 = v1; => Equivalemnt of v2(v1);
+  
+  vector<T> v3(n,val); => v3 has n elements with value val;
+  
+  vector<T> v4(n); => v4 has n copies of vale-initialied object;
+  
+  vector<T> v5{a,b,c}; => definig;
+  
+  vector<T> v5 = {a,b,c}; => same as above;
+  ```
+
+
