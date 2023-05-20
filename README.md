@@ -1,5 +1,8 @@
 # Code_snippets
 
+# Contents
+- [STL Usage](#stl-usage)
+
 ## Count Number of Digits
 ```python
 def number_of_digits(x):
