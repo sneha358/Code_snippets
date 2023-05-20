@@ -269,5 +269,9 @@ pop_back()
   
   vector<T> v5 = {a,b,c}; => same as above;
   ```
+  Initializing 2d vectors
+  ```cpp
+  vector<vector<int>> table<ROWS_COUNT, vector<int>(COLS_COUNT)>;
+  ```
 
 
