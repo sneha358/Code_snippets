@@ -2,6 +2,8 @@
 
 # Contents
 - [STL Usage](#stl-usage)
+  - [Priority Queues](#priority-queue)
+  - [Vectors](#vectors)
 
 ## Count Number of Digits
 ```python
@@ -237,7 +239,7 @@ int largestcolsum(int arr[][3]){
 }
 ```
 ## STL usage
-1. Priority Queue
+1. ### Priority Queue
 ```cpp
 
 priority_queue<T, Conatiner, Comparator> pq;
@@ -255,7 +257,7 @@ push_back()
 pop_back()
 
 ```
-2. Vectors  
+2. ### Vectors  
   * Initializations:
   ```cpp
   vector<T> v1; => default initialization, v1 is empty;
